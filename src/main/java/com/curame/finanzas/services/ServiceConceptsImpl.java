@@ -9,9 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
-public class ServiceConceptsImpl implements IServiceConcept{
+public class ServiceConceptsImpl implements IServiceConcept {
 
     private static Logger log = LoggerFactory.getLogger(ServiceConceptsImpl.class);
 

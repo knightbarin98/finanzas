@@ -1,7 +1,10 @@
 package com.curame.finanzas.services;
 
 import com.curame.finanzas.clients.PaymentClient;
+import com.curame.finanzas.models.entity.Concept;
+import com.curame.finanzas.models.entity.Pacient;
 import com.curame.finanzas.models.entity.Payment;
+import com.curame.finanzas.models.entity.PaymentType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ServicePaymentImpl implements IServicePayment{

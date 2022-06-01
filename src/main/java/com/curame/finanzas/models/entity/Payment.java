@@ -6,12 +6,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
-public class Payment {
+public class Payment{
 
 
     private Long id;
